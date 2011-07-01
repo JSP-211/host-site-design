@@ -3,27 +3,53 @@ body {
     overflow-y: scroll;
 }
 #content {
-    width: 35em;
+    overflow: hidden;
+    background-color: #ffffff;
+    width: 70em;
     height: 30em;
-    margin: 50px;
-    background-color: white;
-    border: 1px solid black;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 10px auto;
+    border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
-    border-bottom-left-radius:  15px;
 }
-#menubar {
+div.menubar {
+    margin: -10px;
     width: auto;
     background-color: #262626;
-    text-align: right;
+    color: #ffffff;
+    text-align: center;
 }
-a, a:visited {
+p {
+    font-style: italic;
+    text-align: center;
+}
+h2 {
+    font-family: monospace;
+    font-size: 140%;
+    border-bottom: 1px dotted gray;
+}
+div.menubar a {
     text-decoration: none;
-	text-align: right;
+	text-align: center;
 	line-height: 28px;
     color: white;
-    padding-right: 15px;
+    width: 15px;
+    height: 15px;
 }
-
-a:hover {
-    color: #00008b;
+div.menubar a.selected, div.menubar a:hover {
+    background-color: #ffffff;
+    padding-bottom: 4px;
+    padding-left: 3px;
+    padding-right: 3px;
+    color: black;
+    border-top-left-radius: 9px;
+    border-top-right-radius: 9px;
+}
+div.copyright {
+    font-family: serif;
+    font-size:60%;
+    text-align:center;
+    color: #ffffff;
+    margin:10px
 }
